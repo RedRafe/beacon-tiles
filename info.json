@@ -1,0 +1,13 @@
+{
+  "name": "beacon-tiles",
+  "version": "0.1.0",
+  "title": "Beacon Tiles",
+  "author": "RedRafe",
+  "source": "https://github.com/RedRafe/beacon-tiles",
+  "homepage": "https://mods.factorio.com/user/RedRafe",
+  "factorio_version": "1.1",
+  "dependencies": [
+    "base >= 1.1.0"
+  ],
+  "description": "Replaces all beacons with tiles with the same effects instead"
+}
