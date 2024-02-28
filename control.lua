@@ -79,6 +79,7 @@ local function on_built_tile(event)
       }
       local inventory = beacon.get_module_inventory()
       inventory.insert(tile_new)
+      beacon.operable = false
     end
   end
 end

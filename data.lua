@@ -105,7 +105,7 @@ data:extend({
         shift = {8, -8}
       }
     },
-    flags = { "not-on-map", "not-in-kill-statistics", "hidden", "hide-alt-info", "not-selectable-in-game", "placeable-off-grid"},
+    flags = { "not-on-map", "not-in-kill-statistics", "hidden", "hide-alt-info", "not-selectable-in-game", "placeable-off-grid", "no-automated-item-removal", "no-automated-item-insertion"},
     collision_mask = {},
     remove_decoratives = true,
     --selectable_in_game = false,
