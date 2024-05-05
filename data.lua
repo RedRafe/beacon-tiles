@@ -37,6 +37,10 @@ for _, mod in pairs(data.raw.module) do
   local info = module_info[mod.name] or module_info.default
   local tile = table.deepcopy(data.raw.tile[info.tile])
 
+  if mod.icons and mod.icons[1] and mod.icons[1].tint then
+    info.tint = mod.icons[1].tint
+  end
+
   if not tile then
     goto continue
   end
@@ -45,7 +49,7 @@ for _, mod in pairs(data.raw.module) do
   tile.localised_name = {'', {'item-name.'..mod.name}}
   tile.tint = info.tint
   tile.order = mod.order
-  tile.layer = tile.layer + (layer * 3)
+  tile.layer = math.min(254, tile.layer + layer)
   tile.map_color = info.tint
   tile.minable.result = tile.name
   -- reference original transition tables so that they keep referencing global water_tile_type_names
