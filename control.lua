@@ -1,5 +1,9 @@
 local TILES = {}
 local BEACON = 'tile-beacon'
+local whitelist_beacons = {
+  [BEACON] = true,
+  ['ll-oxygen-diffuser'] = true,
+}
 
 local function centre(position)
   local center = {}
@@ -125,6 +129,10 @@ local function on_built_entity(event)
 
 
   if entity.prototype.type ~= 'beacon' then
+    return
+  end
+
+  if whitelist_beacons[entity.name] then
     return
   end
 

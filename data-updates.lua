@@ -6,7 +6,7 @@ local lite_mode = settings.startup['bt:lite_mode'].value
 
 local module_info =
 {
-  ['default']               = { tile = "concrete",         tint = { r = 153, g = 121, b = 080 } }, -- brown
+  ['default']               = { tile = "concrete",         tint = { r = 047, g = 079, b = 079 } }, -- #2F4F4F
   
   ['effectivity-module']    = { tile = "stone-path",       tint = { r = 220, g = 250, b = 200 } },
   ['effectivity-module-2']  = { tile = "concrete",         tint = { r = 185, g = 225, b = 165 } },
@@ -19,6 +19,8 @@ local module_info =
   ['productivity-module']   = { tile = "stone-path",       tint = { r = 250, g = 180, b = 120 } },
   ['productivity-module-2'] = { tile = "concrete",         tint = { r = 225, g = 130, b = 090 } },
   ['productivity-module-3'] = { tile = "refined-concrete", tint = { r = 200, g = 080, b = 060 } },
+
+  ['ll-quantum-module']     = { tile = "refined-concrete", tint = { r = 133, g = 094, b = 130 } }, -- #855E82
 }
 
 -- == TILES ===================================================================
